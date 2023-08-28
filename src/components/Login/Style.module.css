@@ -1,0 +1,213 @@
+.loginContainer {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  left: 0px;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.88);
+}
+
+.loginBox {
+  width: 50vw;
+  height: 70vh;
+  background-color: white;
+  margin: auto;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 4px 30px 0px rgba(255, 255, 255, 0.25);
+}
+
+.loginContentBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5vh;
+}
+
+.loginContentBox p {
+  margin: auto;
+  color: #ff0e0e;
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.loginButton {
+  width: 100px;
+  height: 30px;
+  border-radius: 15px;
+  background: #73abff;
+  color: #000000;
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  cursor: pointer;
+  border: none;
+  padding: 5px 10px;
+  margin-top: 2vh;
+}
+
+.loginButton:active {
+  background-color: #4f96ff;
+}
+
+.loginContentBox label {
+  color: #000;
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 20px 20px;
+}
+
+.loginContentBox label input {
+  position: relative;
+  box-sizing: border-box;
+  margin-left: 50px;
+  width: 20vw;
+  padding-left: 10px;
+  height: 5vh;
+  color: #979595;
+  font-family: DM Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.cancelBtn {
+  float: right;
+  position: relative;
+  top: 5vh;
+  right: 5vw;
+  cursor: pointer;
+}
+
+.eyeIcon {
+  width: 24px;
+  margin-left: 2vw;
+  transform: translateY(-110%);
+  float: right;
+  position: relative;
+  top: 5vh;
+  right: 5vw;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1400px) {
+  .loginContentBox p {
+    font-size: 19px;
+  }
+
+  .loginButton {
+    width: 120px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+
+  .loginContentBox label {
+    font-size: 1.2rem;
+    margin: 20px 40px;
+  }
+
+  .loginContentBox label input {
+    font-size: 16px;
+  }
+
+  .cancelBtn {
+    float: right;
+    position: relative;
+    top: 4vh;
+    right: 4vw;
+    cursor: pointer;
+  }
+
+  .eyeIcon {
+    margin-left: 2vw;
+    transform: translateY(-110%);
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .loginBox {
+    width: 80vw;
+    height: 60vh;
+    background-color: white;
+    margin: auto;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0px 4px 30px 0px rgba(255, 255, 255, 0.25);
+  }
+
+  .loginContentBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3vh;
+    margin-left: 6vw;
+  }
+
+  .loginButton {
+    width: 140px;
+    height: 35px;
+    border-radius: 15px;
+    background: #73abff;
+    color: #ffffff;
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 800;
+  }
+
+  .loginContentBox label {
+    color: #000;
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 10px 10px;
+  }
+
+  .loginContentBox label input {
+    position: relative;
+    box-sizing: border-box;
+    margin-left: 1px;
+    width: 45vw;
+    padding-left: 10px;
+    height: 5vh;
+    margin-top: 5px;
+    color: #979595;
+    border: 1px solid rgb(95, 95, 95);
+    font-family: DM Sans;
+    font-size: 15px;
+  }
+
+  .cancelBtn {
+    float: right;
+    position: relative;
+    top: 1vh;
+    right: 2vw;
+    cursor: pointer;
+  }
+
+  .eyeIcon {
+    float: right;
+    top: 5.5vh;
+    right: 12vw;
+    cursor: pointer;
+  }
+}

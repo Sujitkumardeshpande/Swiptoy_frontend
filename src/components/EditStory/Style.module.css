@@ -1,0 +1,431 @@
+.editstoryContainer {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  left: 0px;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.88);
+}
+
+.slideBtn.active {
+  border: 2px solid #73abff;
+}
+
+.editstoryBox {
+  width: 50vw;
+  height: 80vh;
+  background-color: white;
+  margin: auto;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 4px 30px 0px rgba(255, 255, 255, 0.25);
+}
+
+.slideBtnContainer {
+  width: 35vw;
+  display: flex;
+  gap: 1rem;
+  position: relative;
+  top: 8vh;
+  left: 5vw;
+}
+
+.slideBtn {
+  cursor: pointer;
+  width: 76px;
+  height: 61px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+  color: #000;
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  box-sizing: border-box;
+  padding-top: 20px;
+}
+
+.editstoryContentBox {
+  display: flex;
+  flex-direction: column;
+  width: 34vw;
+  margin-top: 10vh;
+  margin-left: 6vw;
+}
+
+.editstoryContentBox div {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.editstoryContentBox div label {
+  color: #000;
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.editstoryContentBox div select {
+  width: 19vw;
+  height: 35px;
+  padding-left: 10px;
+  border: 2px solid #000;
+  background: #fff;
+  color: #474141;
+  font-family: DM Sans;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.editstoryInput {
+  width: 18vw;
+  height: 30px;
+  padding-left: 10px;
+  border: 2px solid #000;
+  background: #fff;
+  color: #474141;
+  font-family: DM Sans;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.editstoryButtonsBox {
+  margin-top: 15px;
+  margin-left: 6vw;
+  width: 40vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nextBtn {
+  width: 100px;
+  height: 35px;
+  border-radius: 20px;
+  background: #73abff;
+  color: #fff;
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border: none;
+  cursor: pointer;
+}
+
+.nextBtn:active {
+  background-color: #4b91fb;
+}
+
+.previousBtn {
+  width: 100px;
+  height: 35px;
+  border-radius: 20px;
+  background: #7eff73;
+  color: #fff;
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border: none;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.previousBtn:active {
+  background-color: #59dc4d;
+}
+
+.postBtn {
+  width: 100px;
+  height: 35px;
+  border-radius: 20px;
+  background: #ff7373;
+  color: #fff;
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border: none;
+  cursor: pointer;
+}
+
+.postBtn:active {
+  background-color: #e85454;
+}
+
+#heading2 {
+  position: relative;
+  left: 10px;
+  top: 12vh;
+  float: right;
+  color: #474141;
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.editstoryBox img {
+  display: inline;
+  position: relative;
+  float: right;
+  margin: 5px 5px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1400px) {
+  .editstoryContentBox {
+    display: flex;
+    flex-direction: column;
+    width: 34vw;
+    margin-top: 10vh;
+    margin-left: 6vw;
+  }
+
+  .slideBtn {
+    font-size: 16px;
+  }
+
+  .editstoryContentBox div label {
+    font-size: 24px;
+  }
+
+  .editstoryContentBox div select {
+    width: 20vw;
+    height: 36px;
+    font-size: 18px;
+  }
+
+  .editstoryInput {
+    width: 19vw;
+    height: 34px;
+    font-size: 18px;
+  }
+
+  .editstoryButtonsBox {
+    margin-top: 25px;
+    margin-left: 6vw;
+    width: 40vw;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nextBtn {
+    width: 120px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+
+  .previousBtn {
+    width: 120px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+
+  .postBtn {
+    width: 120px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+
+  .heading2 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .editstoryBox {
+    width: 90vw;
+    height: 86vh;
+    background-color: white;
+    margin: auto;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0px 4px 30px 0px rgba(255, 255, 255, 0.25);
+  }
+
+  .slideBtnContainer {
+    width: 80vw;
+    display: flex;
+    gap: 0.6rem;
+    position: relative;
+    top: 2vh;
+    left: 5vw;
+  }
+
+  .slideBtn {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+    color: #000;
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    box-sizing: border-box;
+    padding-top: 15px;
+    box-sizing: border-box;
+  }
+
+  .editstoryContentBox {
+    width: 80vw;
+    margin-top: 4vh;
+    margin-left: 5vw;
+  }
+
+  .editstoryContentBox div {
+    margin: 10px;
+  }
+
+  .editstoryContentBox div label {
+    color: #000;
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .editstoryContentBox div select {
+    width: 40vw;
+    height: 35px;
+    padding-left: 10px;
+    border: 2px solid #000;
+    background: #fff;
+    color: #474141;
+    font-family: DM Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .editstoryInput {
+    width: 40vw;
+    height: 30px;
+    padding-left: 10px;
+    border: 2px solid #000;
+    background: #fff;
+    color: #474141;
+    font-family: DM Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .editstoryButtonsBox {
+    margin-top: 15px;
+    margin-left: 6vw;
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nextBtn {
+    width: 100px;
+    height: 35px;
+    border-radius: 20px;
+    background: #73abff;
+    color: #fff;
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border: none;
+    cursor: pointer;
+  }
+
+  .nextBtn:active {
+    background-color: #4b91fb;
+  }
+
+  .previousBtn {
+    width: 100px;
+    height: 35px;
+    border-radius: 20px;
+    background: #7eff73;
+    color: #fff;
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border: none;
+    cursor: pointer;
+    margin-right: 15px;
+  }
+
+  .previousBtn:active {
+    background-color: #59dc4d;
+  }
+
+  .postBtn {
+    width: 100px;
+    height: 35px;
+    border-radius: 20px;
+    background: #ff7373;
+    color: #fff;
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border: none;
+    cursor: pointer;
+  }
+
+  .postBtn:active {
+    background-color: #e85454;
+  }
+
+  #heading2 {
+    top: 4vh;
+    float: none;
+    color: #474141;
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .editstoryBox img {
+    display: inline;
+    position: relative;
+    float: right;
+    margin: 5px 5px;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,353 @@
+.storyContainer {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.88);
+}
+
+.loading {
+  width: 200px;
+  height: 200px;
+  margin-left: 550px;
+  text-align: center;
+  margin-top: 200px;
+}
+
+.storycardBox {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  gap: 6rem;
+}
+
+.storycardBox img {
+  cursor: pointer;
+}
+
+.storycard {
+  position: relative;
+  width: 22vw;
+  height: 80vh;
+  border-radius: 10px;
+  background: rgb(0, 0, 0) -67.777px 0px / 139.986% 100% no-repeat;
+}
+
+.upperDarkshade {
+  position: absolute;
+  width: 22vw;
+  height: 10vh;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background: linear-gradient(180deg, #000 20.26%, rgba(0, 0, 0, 0) 100%);
+  z-index: 1;
+}
+
+.lowerDarkshade {
+  position: absolute;
+  width: 22vw;
+  height: 26vh;
+  margin-top: 54vh;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+  background: linear-gradient(0deg, #000000 60.26%, rgba(0, 0, 0, 0) 100%);
+  padding-top: 25px;
+  box-sizing: border-box;
+}
+
+.storyImg {
+  top: 2.5vh;
+  position: absolute;
+  width: 22vw;
+  height: 60vh;
+}
+.leftrightBtnBox {
+  position: absolute;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  width: 21.7vw;
+  height: 52vh;
+  top: 10vh;
+}
+
+.bookmarksLikesContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 30px;
+  margin-top: 6px;
+  width: 18vw;
+}
+
+.bookmarksLikesContainer div {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.bookmarksLikesContainer div span {
+  display: inline;
+  margin-top: 5px;
+  color: #fff;
+  font-family: DM Sans;
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.upperDarkshade div {
+  margin: 8px 28px;
+  width: 18vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sharebtn:active {
+  width: 20px;
+}
+
+.linkSharebar {
+  position: absolute;
+  width: 18vw;
+  height: 30px;
+  border-radius: 40px;
+  background: #d9d9d9;
+  z-index: 1;
+  text-align: center;
+  color: #f00;
+  padding: 5px;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  box-sizing: border-box;
+  margin: 15vw 30px;
+}
+
+.storyTitle {
+  margin-bottom: 5px;
+  color: #fff;
+  font-family: DM Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-left: 1vw;
+}
+
+.storyDescription {
+  height: 8vh;
+  padding: 0px 10px 0px;
+  text-align: justify;
+  color: #fff;
+  font-family: DM Sans;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  overflow-y: scroll;
+}
+.storyDescription::-webkit-scrollbar {
+  width: 5px;
+}
+
+.storyDescription::-webkit-scrollbar-thumb {
+  background-color: #bcbcbe;
+  border-radius: 4px;
+}
+
+.storyDescription::-webkit-scrollbar-thumb:hover {
+  background-color: #5e5e5e;
+}
+.enabledBtn {
+  cursor: pointer;
+}
+
+.disabledBtn {
+  cursor: default;
+  opacity: 0.6;
+}
+
+@media screen and (min-width: 1400px) {
+  .storycardBox {
+    gap: 8rem;
+  }
+
+  .bookmarksLikesContainer div {
+    display: flex;
+    gap: 0.6rem;
+  }
+
+  .bookmarksLikesContainer div span {
+    font-size: 16px;
+  }
+  .upperDarkshade div {
+    margin-top: 15px;
+    margin-left: 35px;
+  }
+  .linkSharebar {
+    position: absolute;
+    width: 20vw;
+    height: 40px;
+    font-size: 18px;
+    margin: 15vw 20px;
+  }
+  .storyTitle {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  .storyDescription {
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+  }
+  .loading {
+    width: 150px;
+    height: 150px;
+    margin-left: 700px;
+    text-align: center;
+    margin-top: 250px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .storyContainer {
+    position: absolute;
+    width: 0vw;
+    height: 0vh;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.88);
+    display: flex;
+  }
+
+  .loading {
+    width: 150px;
+    height: 150px;
+    margin-left: 140px;
+    text-align: center;
+    margin-top: 250px;
+  }
+
+  .storycard {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+    margin-top: 0;
+    background: rgb(0, 0, 0) -67.777px 0px / 139.986% 100% no-repeat;
+  }
+
+  .upperDarkshade {
+    position: absolute;
+    width: 100vw;
+    height: 12vh;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    background: linear-gradient(180deg, #000 15.26%, rgba(0, 0, 0, 0) 100%);
+    z-index: 1;
+  }
+
+  .lowerDarkshade {
+    position: absolute;
+    width: 100vw;
+    height: 26vh;
+    margin-top: 74vh;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    background: linear-gradient(0deg, #000000 45.26%, rgba(0, 0, 0, 0) 100%);
+    padding-top: 0;
+    box-sizing: border-box;
+  }
+
+  .storyImg {
+    position: absolute;
+    width: 100vw;
+    height: 82vh;
+
+    top: 3vh;
+  }
+
+  .bookmarksLikesContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    width: 80vw;
+  }
+
+  .bookmarksLikesContainer div {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .bookmarksLikesContainer div span {
+    display: inline;
+    margin-top: 2px;
+    color: #fff;
+    font-family: DM Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  .upperDarkshade div {
+    margin: 20px 28px;
+    width: 86vw;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .sharebtn:active {
+    width: 20px;
+  }
+
+  .linkSharebar {
+    position: absolute;
+    width: 80vw;
+    height: 40px;
+    border-radius: 40px;
+    background: #eae9e9;
+    z-index: 1;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    font-family: DM Sans;
+    font-size: 20px;
+    margin: 75vw 50px;
+  }
+
+  .storyTitle {
+    font-size: 26px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+  }
+
+  .storyDescription {
+    margin: 10px 16px 24px 10px;
+    text-align: justify;
+    font-size: 16px;
+    height: 8vh;
+  }
+
+  .enabledBtn {
+    cursor: pointer;
+  }
+
+  .disabledBtn {
+    cursor: default;
+    opacity: 0.6;
+  }
+  .leftrightBtnBox {
+    width: 98%;
+    height: 68vh;
+  }
+  #previousBtn {
+    display: none;
+  }
+}

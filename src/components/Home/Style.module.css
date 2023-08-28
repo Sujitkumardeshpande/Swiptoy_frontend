@@ -1,0 +1,367 @@
+.categoryContainer {
+  width: 100%;
+  height: 30vh;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+  padding: 15px 40px;
+  box-sizing: border-box;
+  gap: 4rem;
+}
+
+.categoryBox {
+  flex: 0 0 11vw;
+  height: 22vh;
+  border-radius: 20px;
+  cursor: pointer;
+  background: linear-gradient(45deg, #e66485, #3ebdfc);
+  background-size: cover;
+  background-position: center;
+}
+
+.categoryName {
+  margin-top: 40px;
+  color: #ffffff;
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.storiesContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  margin-top: 0px;
+}
+
+.categoryTitle {
+  text-align: center;
+  color: #000;
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.storyBox {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-evenly;
+}
+
+.storyCard {
+  margin-bottom: 20px;
+  width: 20vw;
+  height: 50vh;
+  cursor: pointer;
+  border-radius: 15px;
+  border: 0.2px solid black;
+}
+
+.categoryBox.selected {
+  border: 4px solid #00acd2;
+}
+
+.storyCard img {
+  position: absolute;
+  width: 20vw;
+  height: 50vh;
+  border-radius: 15px;
+  filter: brightness(80%);
+}
+
+.storyTitle {
+  color: #fff;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-left: 1vw;
+  margin-bottom: 5px;
+}
+
+.storyDescription {
+  padding: 0px 10px 0px;
+  text-align: justify;
+  color: #fff;
+  font-family: DM Sans;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.storyBoxContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.darkShadow {
+  border-radius: 0px 0px 15px 15px;
+  top: 32vh;
+  position: relative;
+  width: 20vw;
+  height: 18vh;
+  background: linear-gradient(360deg, #000 40.26%, rgba(0, 0, 0, 0) 100%);
+  padding-top: 10px;
+}
+
+.seeMore {
+  width: 100px;
+  height: 35px;
+  margin-top: 10px;
+  border-radius: 20px;
+  background: #ff8484;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.editBtn {
+  position: relative;
+  top: 28.5vh;
+  left: 7vw;
+  width: 79px;
+  height: 34px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  background-color: #fff;
+  color: black;
+  border-radius: 20px;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.14);
+}
+
+.loadingbar {
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+  margin-left: 600px;
+}
+
+@media screen and (min-width: 1400px) {
+  .categoryContainer {
+    padding: 15px 50px;
+    gap: 4rem;
+  }
+
+  .categoryBox {
+    flex: 0 0 12vw;
+    height: 24vh;
+  }
+
+  .categoryName {
+    margin-top: 60px;
+    font-size: 30px;
+  }
+
+  .categoryTitle {
+    font-size: 2rem;
+  }
+
+  .storyCard {
+    margin-bottom: 20px;
+    width: 20vw;
+    height: 50vh;
+  }
+
+  .storyTitle {
+    color: #fff;
+    font-family: DM Sans;
+    font-size: 24px;
+  }
+
+  .storyDescription {
+    margin-left: 1vw;
+    font-size: 12px;
+  }
+
+  .loadingbar {
+    margin-top: 150px;
+    margin-left: 750px;
+  }
+
+  .seeMore {
+    width: 110px;
+    height: 38px;
+    margin-top: 10px;
+    font-size: 1.2rem;
+  }
+
+  .editBtn {
+    position: relative;
+    top: 28.8vh;
+    left: 7vw;
+    width: 84px;
+    height: 36px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .categoryContainer {
+    width: 100%;
+    height: 30vh;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    padding: 15px 40px;
+    box-sizing: border-box;
+    gap: 1rem;
+  }
+
+  .categoryBox {
+    width: 18vw;
+    height: 8vh;
+    border-radius: 20px;
+    cursor: pointer;
+    background: linear-gradient(45deg, #e66485, #3ebdfc);
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+  }
+  .loadingbar {
+    margin-top: 140px;
+    margin-left: 180px;
+  }
+  .categoryName {
+    margin-top: 1px;
+    color: #ffffff;
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+
+  .storiesContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    margin-top: 0px;
+
+    margin-bottom: 20px;
+  }
+
+  .categoryTitle {
+    text-align: center;
+    color: #000;
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .storyBox {
+    width: 100vw;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-evenly;
+  }
+
+  .storyCard {
+    margin-bottom: 20px;
+    width: 90vw;
+    height: 60vh;
+    cursor: pointer;
+    border-radius: 15px;
+  }
+
+  .categoryBox.selected {
+    border: 4px solid #00acd2;
+  }
+
+  .storyCard img {
+    position: absolute;
+    width: 90vw;
+    height: 50vh;
+    border-radius: 15px;
+    filter: brightness(80%);
+  }
+
+  .storyTitle {
+    color: #fff;
+    font-family: DM Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 1.5vw;
+  }
+
+  .storyDescription {
+    margin-left: 1vw;
+    color: #fff;
+    font-family: DM Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .darkShadow {
+    border-radius: 15px;
+    top: 41vh;
+    position: relative;
+    width: 90vw;
+    height: 18vh;
+    background: linear-gradient(360deg, #000 58.26%, rgba(0, 0, 0, 0) 100%);
+  }
+
+  .seeMore {
+    width: 100px;
+    height: 35px;
+    margin-top: 10px;
+    border-radius: 20px;
+    background: #ff8484;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+  }
+
+  .editBtn {
+    position: relative;
+    top: 38.5vh;
+    left: 34vw;
+    width: 100px;
+    height: 35px;
+    font-weight: 800;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    background-color: #fff;
+    color: black;
+    border-radius: 20px;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.14);
+  }
+}

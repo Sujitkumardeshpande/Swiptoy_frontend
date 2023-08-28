@@ -1,0 +1,17 @@
+.progressbar-container {
+  display: flex;
+  align-items: center;
+  height: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.progressbar-segment {
+  flex-grow: 1;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.progressbar-segment.filled {
+  background-color: #ffffff;
+}

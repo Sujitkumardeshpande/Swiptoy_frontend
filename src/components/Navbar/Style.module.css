@@ -1,0 +1,322 @@
+.navbarContainer {
+  width: 100vw;
+  height: 10vh;
+  position: relative;
+  background: #fff;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px;
+  box-sizing: border-box;
+}
+
+.pageTitle {
+  cursor: pointer;
+  color: #000;
+  margin-left: 10px;
+  font-family: DM Sans;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.navbarBtns {
+  display: flex;
+  gap: 1.5rem;
+  height: 5vh;
+  margin-top: 3px;
+  margin-right: 10px;
+}
+
+.registerBtn {
+  width: 100px;
+  height: 30px;
+  border-radius: 15px;
+  background: #fd7e7e;
+  color: #fff;
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  cursor: pointer;
+  border: none;
+  padding: 5px 10px;
+}
+
+.registerBtn:active {
+  background-color: #ee6565;
+}
+
+.signinBtn {
+  width: 100px;
+  height: 30px;
+  border-radius: 15px;
+  background: #7bb0ff;
+  color: #fff;
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  cursor: pointer;
+  border: none;
+}
+
+.signinBtn:active {
+  background: #699dec;
+}
+
+.bookmarksBtn {
+  display: flex;
+  align-items: center;
+  height: 35px;
+  border-radius: 15px;
+  background: #fd7e7e;
+  color: #fff;
+  font-family: DM Sans;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  cursor: pointer;
+  border: none;
+  padding: 8px 12px;
+  text-transform: none;
+}
+
+.profileIcon {
+  width: 40px;
+  height: 40px;
+  filter: brightness(120%);
+  border-radius: 50%;
+}
+
+.menuIcon {
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.profileCard {
+  top: 11vh;
+  right: 10px;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  float: right;
+  padding-top: 20px;
+  width: 15vw;
+  height: 20vh;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.profileCard img {
+  margin-left: 140px;
+  cursor: pointer;
+}
+
+.username {
+  color: #000;
+  text-transform: capitalize;
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.logoutBtn {
+  width: 100px;
+  height: 35px;
+  border-radius: 15px;
+  background: #fd7e7e;
+  color: #fff;
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  cursor: pointer;
+  border: none;
+  padding: 5px 10px;
+}
+
+.logoutBtn:active {
+  background-color: #ee6565;
+}
+
+@media screen and (min-width: 1400px) {
+  .navbarContainer {
+    padding: 15px 10px;
+  }
+
+  .pageTitle {
+    font-size: 36px;
+  }
+
+  .navbarBtns {
+    display: flex;
+    gap: 1.5rem;
+    height: 5vh;
+    margin-top: 3px;
+    margin-right: 20px;
+  }
+
+  .registerBtn,
+  .signinBtn {
+    width: 120px;
+    height: 35px;
+    font-size: 1rem;
+  }
+
+  .bookmarksBtn {
+    font-size: 1rem;
+  }
+
+  .profileIcon {
+    width: 45px;
+    height: 45px;
+    filter: brightness(120%);
+    border-radius: 50%;
+  }
+
+  .menuIcon {
+    margin-top: 5px;
+    cursor: pointer;
+  }
+
+  .profileCard img {
+    margin-left: 140px;
+    cursor: pointer;
+  }
+
+  .username {
+    font-size: 20px;
+  }
+
+  .logoutBtn {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .navbarContainer {
+    width: 100vw;
+    height: 10vh;
+    position: relative;
+    background: #fff;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    box-sizing: border-box;
+  }
+
+  .pageTitle {
+    cursor: pointer;
+    color: #000;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-family: DM Sans;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .navbarBtns {
+    display: flex;
+    gap: 1.5rem;
+    height: 5vh;
+    margin-top: 3px;
+    margin-right: 10px;
+  }
+
+  .registerBtn,
+  .signinBtn {
+    width: 150px;
+    height: 40px;
+    font-size: 0.8rem;
+    border-radius: 15px;
+  }
+
+  .registerBtn:active {
+    background-color: #ee6565;
+  }
+
+  .signinBtn:active {
+    background: #699dec;
+  }
+
+  .bookmarksBtn {
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 1rem;
+    border: none;
+    padding: 0px 20px;
+  }
+
+  .profileIcon {
+    width: 50px;
+    height: 50px;
+    filter: brightness(120%);
+    border-radius: 50%;
+  }
+
+  .menuIcon {
+    width: 30px;
+    margin-top: 10px;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+
+  .profileCard {
+    top: 10vh;
+    right: 0px;
+    position: absolute;
+    z-index: 1;
+    float: none;
+    padding-top: 10px;
+    width: 100%;
+    height: 40vh;
+    background: #fff;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  .profileContentbox {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    align-items: center;
+  }
+
+  .profileCard img {
+    margin-left: 0px;
+    cursor: pointer;
+  }
+
+  #crossBtn {
+    margin-left: 80vw;
+    float: right;
+    cursor: pointer;
+  }
+
+  .username {
+    font-size: 20px;
+  }
+
+  .logoutBtn {
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+  }
+}
